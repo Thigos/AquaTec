@@ -97,7 +97,7 @@ nav {
 }
 
 .banner h1 {
-    color: #ffa600c2;
+    color: #ffa600ce;
     height: 500px;
     font-size: 3em;
     text-align: center;
@@ -141,4 +141,13 @@ nav {
 
 .card p {
     text-align: justify;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    border-top: solid 5px var(--details-color);
+    color: var(--link-color);
 }
