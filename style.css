@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root{
+    --primary-color: #1C1C1C;
+    --details-color: aqua;
+    --link-color: orange;
+    --left-space: 10%;
+    --right-space: 10%;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+p, h1, h4, a {
+    font-family: 'Poppins', sans-serif;
+}
+
+svg {
+    position: absolute;
+    bottom: -1px;
+}
+
+/* Header */
+
+#homer {
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+}
+
+nav {
+    background-color: var(--primary-color);
+    border-bottom: solid 5px var(--details-color);
+    padding-left: var(--left-space);
+    padding-right: var(--right-space);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-title {
+    margin: 0px;
+    color: var(--details-color);
+    font-size: 2.4em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons-container li {
+    list-style-type: none;
+    margin-left: 50px;
+    border-bottom: var(--link-color);
+}
+
+.buttons-container li a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-size: 1em;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+.buttons-container li a div{
+    background-color: var(--link-color);
+    width: 0%;
+    height: 4px;
+    transition: 1s;
+}
+
+.buttons-container li a:hover div{
+    width: 100%;
+}
+
+/* Body */
+
+.banner {
+    background-image: url('img/water-g5e96ed234_1920.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 0px;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+
+.banner h1 {
+    color: #ffa600c2;
+    height: 500px;
+    font-size: 3em;
+    text-align: center;
+}
+
+.banner h1 span {
+    color: var(--link-color);
+    font-weight: 900;
+}
+
+.social {
+    padding-left: var(--left-space);
+    padding-right: var(--right-space);
+    background-color: #f0ffff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card img {
+    width: 200px;
+}
+
+.card h4 {
+    color: var(--link-color);
+}
+
+.card p {
+    text-align: justify;
+}
