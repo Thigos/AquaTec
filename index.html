@@ -4,7 +4,7 @@
     <meta charPosset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AquaTec</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -56,15 +56,3 @@
     </footer>
 </body>
 </html>
-<script>
-    var banner = document.getElementById('banner');
-    var centerY = 0;
-    var centerX = 0;
-    var goTop = true;
-
-    setInterval(()=>{
-        banner.style.backgroundPositionY = goTop? (centerY+5)+ 'px' : (centerY-5) + 'px';
-        goTop = !goTop;
-    }, 2100);
-
-</script>
