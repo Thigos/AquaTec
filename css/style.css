@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root{
-    --primary-color: #1C1C1C;
-    --details-color: aqua;
-    --link-color: orange;
+    --primary-color: #000;
+    --details-color: #32b9cd;
+    --link-color: #e3b061;
     --left-space: 10%;
     --right-space: 10%;
 }
@@ -13,13 +13,8 @@ body {
     height: 100vh;
 }
 
-p, h1, h4, a {
+p, h1, h4, a, h2 {
     font-family: 'Poppins', sans-serif;
-}
-
-svg {
-    position: absolute;
-    bottom: -1px;
 }
 
 /* Header */
@@ -28,6 +23,7 @@ svg {
     position: fixed;
     width: 100vw;
     z-index: 2;
+    top: 0px;
 }
 
 nav {
@@ -79,31 +75,36 @@ nav {
     width: 100%;
 }
 
+
+.nav-active{
+    color: orange !important;
+    font-weight: 900;
+}
+
 /* Body */
 
 .banner {
-    background-image: url('img/bg-jelly-fish-para_outras_pags.png');
+    background-image: url('../img/bg-jelly-fish-para_outras_pags.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 0px;
     background-attachment: fixed;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 2s;
 }
 
-.banner h1 {
-    color: #ffa600ce;
+.banner-title {
+    color: rgba(227, 175, 97, 0.6);
     height: 500px;
     font-size: 3em;
     text-align: center;
 }
 
-.banner h1 span {
+.banner-title span {
     color: var(--link-color);
     font-weight: 900;
 }
@@ -144,6 +145,7 @@ nav {
 }
 
 footer {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
